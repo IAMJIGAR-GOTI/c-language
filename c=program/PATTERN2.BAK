@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j,l,k=65;
+	clrscr();
+
+	for(i='E';i>='A';i--)
+	{
+		for(j='E';j>=i;j--)
+		{
+			printf("%c ",j);
+		}
+		printf("\n");
+	}
+
+	printf("\n");
+
+	for(i='A';i<='E';i++)
+	{
+		for(l='D';l>=i;l--)
+		{
+			printf(" ");
+		}
+		for(j='A';j<=i;j++)
+		{
+			printf("%c",j);
+		}
+		printf("\n");
+	}
+
+	printf("\n");
+
+	for(i='A';i<='E';i++)
+	{
+		for(j='A';j<=i;j++)
+		{
+			printf("%c ",k);
+			k++;
+		}
+		printf("\n");
+	}
+
+
+	getch();
+}

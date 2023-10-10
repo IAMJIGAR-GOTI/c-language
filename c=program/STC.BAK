@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char c[100];
+	int i,count=0;
+	clrscr();
+
+	printf("Enter String=");
+	scanf("%s",&c);
+
+	printf("\n%s",c);
+
+	for(i=0;c[i]!=NULL;i++)
+	{
+		printf("\nc[%d]=%c",i,c[i]);
+		count++;
+	}
+	printf("\n\nTotal char string=%d",count);
+
+
+	getch();
+}
